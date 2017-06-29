@@ -16,15 +16,15 @@
 
   <!-- Link2 -->
   <gazebo reference="link2">
-    <mu1>0.2</mu1>
-    <mu2>0.2</mu2>
+    <mu1>0</mu1>
+    <mu2>0</mu2>
     <material>Gazebo/Black</material>
   </gazebo>
 
   <!-- Link3 -->
   <gazebo reference="link3">
-    <mu1>0.2</mu1>
-    <mu2>0.2</mu2>
+    <mu1>0</mu1>
+    <mu2>0</mu2>
     <material>Gazebo/Orange</material>
   </gazebo>
 
