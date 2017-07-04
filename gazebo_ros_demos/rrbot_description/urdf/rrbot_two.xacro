@@ -55,9 +55,9 @@
   <joint name="joint1" type="continuous">
     <parent link="link1"/>
     <child link="link2"/>
-    <origin xyz="0 ${width} ${height1 - axel_offset}" rpy="0 0 0"/>
+    <origin xyz="0 ${width} ${height1 - axel_offset}" rpy="0 ${-0.5*PI} 0"/>
     <axis xyz="0 1 0"/>
-    <limit effort="1000" lower="${-PI*2.0}" upper="${PI*2.0}" velocity="1"/>
+    <limit effort="10000" lower="${-PI*2.0}" upper="${PI*2.0}" velocity="1"/>
     <dynamics damping="0.1"/>
   </joint>
 
@@ -93,7 +93,7 @@
     <child link="link3"/>
     <origin xyz="0 ${width} ${height2 - axel_offset*2}" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <limit effort="1000" lower="${-PI*2.0}" upper="${PI*2.0}" velocity="1"/>
+    <limit effort="10000" lower="${-PI*2.0}" upper="${PI*2.0}" velocity="1"/>
     <dynamics damping="0.1"/>
   </joint>
 
@@ -185,9 +185,9 @@
   <joint name="joint1_copy" type="continuous">
     <parent link="link1_copy"/>
     <child link="link2_copy"/>
-    <origin xyz="0 ${width} ${height1 - axel_offset}" rpy="0 0 0"/>
+    <origin xyz="0 ${width} ${height1 - axel_offset}" rpy="0 ${0.5*PI} 0"/>
     <axis xyz="0 -1 0"/>
-    <limit effort="1000" lower="${-PI*2.0}" upper="${PI*2.0}" velocity="1"/>
+    <limit effort="10000" lower="${-PI*2.0}" upper="${PI*2.0}" velocity="1"/>
     <dynamics damping="0.1"/>
   </joint>
 
@@ -223,7 +223,7 @@
     <child link="link3_copy"/>
     <origin xyz="0 ${width} ${height2 - axel_offset*2}" rpy="0 0 0"/>
     <axis xyz="0 -1 0"/>
-    <limit effort="1000" lower="${-PI*2.0}" upper="${PI*2.0}" velocity="1"/>
+    <limit effort="10000" lower="${-PI*2.0}" upper="${PI*2.0}" velocity="1"/>
     <dynamics damping="0.1"/>
   </joint>
 
@@ -294,9 +294,6 @@
     <parent link="link3_copy"/>
     <child link="box_copy"/>
     <origin xyz="0 ${width} ${height3 - axel_offset*2}" rpy="0 0 0"/>
-    <!-- <axis xyz="0 1 0"/> -->
-    <!-- <limit effort="1000" lower="${-PI*2.0}" upper="${PI*2.0}" velocity="1"/> -->
-    <!-- <dynamics damping="0.1"/> -->
   </joint>
 
   <transmission name="tran1_copy">
